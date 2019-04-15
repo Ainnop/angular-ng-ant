@@ -1,4 +1,11 @@
-<input type="text" nz-input placeholder="Search..." [(ngModel)]="searchValue" />
+<br>
+<nz-input-group [nzSuffix]="suffixIconSearch">
+     <input type="text" nz-input placeholder="Type Here to Search..." [(ngModel)]="searchValue" />
+    </nz-input-group>
+    <ng-template #suffixIconSearch>
+      <i nz-icon type="search"></i>
+    </ng-template>
+    <br />
 <nz-table #basicTable [nzData]="alldata">
       <thead>
         <tr>
